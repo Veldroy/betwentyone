@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="630" viewBox="0 0 450 630" fill="none">
+  <defs>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff5a3d"/>
+      <stop offset="1" stop-color="#c2133b"/>
+    </linearGradient>
+    <pattern id="diamonds" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M15 2 L28 15 L15 28 L2 15 Z" fill="rgba(255,255,255,0.18)"/>
+    </pattern>
+  </defs>
+  <rect x="10" y="10" width="430" height="610" rx="26" fill="url(#back)" stroke="#7c0b22" stroke-width="12"/>
+  <rect x="32" y="32" width="386" height="566" rx="18" fill="url(#diamonds)" stroke="#ffd1d1" stroke-width="6"/>
+  <rect x="96" y="106" width="258" height="418" rx="22" fill="rgba(255,255,255,0.18)" stroke="#ffd5d5" stroke-width="6"/>
+  <path d="M224 180 c30 30 54 62 54 92 c0 34 -26 56 -54 72 c-28 -16 -54 -38 -54 -72 c0 -30 24 -62 54 -92z" fill="#ffe6e6" stroke="#fff2f2" stroke-width="6"/>
+  <circle cx="224" cy="290" r="28" fill="#e71f4b" stroke="#fff2f2" stroke-width="6"/>
+  <path d="M224 360 c14 12 24 25 24 38 c0 18 -16 32 -24 40 c-8 -8 -24 -22 -24 -40 c0 -13 10 -26 24 -38z" fill="#ffe6e6" stroke="#fff2f2" stroke-width="6"/>
+</svg>
