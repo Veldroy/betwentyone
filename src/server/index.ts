@@ -43,7 +43,7 @@ Devvit.addHTTP((app) => {
     const youName = reddit.username!;
     const id = crypto.randomUUID() as SessionId;
 
-    const seed = Date.now() ^ youId.hashCode?.() ?? Math.floor(Math.random()*1e9);
+    const seed = Date.now() ^ (youId.hashCode?.() ?? Math.floor(Math.random()*1e9));
     const rng = mulberry32(seed);
     const rules = { ...DEFAULT_RULES, decks: body.decks ?? DEFAULT_RULES.decks, s17: body.s17 ?? DEFAULT_RULES.s17 };
     const shoe = makeShoe(rules.decks, rng);
