@@ -124,6 +124,9 @@ Devvit.addHTTP((app) => {
     if (!state) return err('not-found');
     return jsonSigned(viewFor(state, youId));
   });
+
+  // Required trigger handler: acknowledge installs so playtests succeed.
+  app.post('/internal/on-app-install', () => Response.json({ ok: true }));
 });
 
 function jsonSigned<T>(data: T) {
